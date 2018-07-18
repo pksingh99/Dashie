@@ -18,24 +18,24 @@ export class DashboardComponent implements OnDestroy {
   private alive = true;
 
   lightCard: CardSettings = {
-    title: 'Light',
-    iconClass: 'nb-lightbulb',
-    type: 'primary',
-  };
-  rollerShadesCard: CardSettings = {
-    title: 'Roller Shades',
-    iconClass: 'nb-roller-shades',
+    title: 'Connectivity Check',
+    iconClass: 'nb-power-circled',
     type: 'success',
   };
-  wirelessAudioCard: CardSettings = {
-    title: 'Wireless Audio',
-    iconClass: 'nb-audio',
+  rollerShadesCard: CardSettings = {
+    title: 'Collect Metrics',
+    iconClass: 'fa fa-area-chart',
     type: 'info',
   };
-  coffeeMakerCard: CardSettings = {
-    title: 'Coffee Maker',
-    iconClass: 'nb-coffee-maker',
+  wirelessAudioCard: CardSettings = {
+    title: 'Slack Notify Integration',
+    iconClass: 'fa fa-bullhorn',
     type: 'warning',
+  };
+  coffeeMakerCard: CardSettings = {
+    title: 'Allow Server Modification',
+    iconClass: 'ion-clipboard',
+    type: 'success',
   };
 
   statusCards: string;

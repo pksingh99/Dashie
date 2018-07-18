@@ -7,7 +7,7 @@ import { NbThemeService } from '@nebular/theme';
   template: `
     <nb-card size="xsmall">
       <nb-card-header>
-        <span>Traffic Consumption</span>
+        <span>Performance Metrics</span>
         <div class="dropdown ghost-dropdown" ngbDropdown>
           <button type="button" class="btn btn-sm" ngbDropdownToggle
                   [ngClass]="{ 'btn-success': currentTheme == 'default', 'btn-primary': currentTheme != 'default'}">
@@ -25,8 +25,8 @@ import { NbThemeService } from '@nebular/theme';
   `,
 })
 export class TrafficComponent implements OnDestroy {
-  type = 'month';
-  types = ['week', 'month', 'year'];
+  type = 'CPU';
+  types = ['CPU', 'Memory', 'Bandwidth'];
   currentTheme: string;
   themeSubscription: any;
 
