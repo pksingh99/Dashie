@@ -9,7 +9,7 @@ let counter = 0;
 export class UserService {
 
   private users = {
-    nick: { name: 'Simon Kerr', picture: 'assets/images/avatar.png' }
+    nick: { name: 'Simon Kerr', picture: 'assets/images/avatar.png' },
   };
 
   private userArray: any[];

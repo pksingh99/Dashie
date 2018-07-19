@@ -11,5 +11,13 @@
 
     <artifactId>backend</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>io.github.symonk</groupId>
+            <artifactId>frontend</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
